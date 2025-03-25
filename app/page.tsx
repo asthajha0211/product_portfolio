@@ -175,9 +175,17 @@ export default function Home() {
 
   return (
     <div
+      style={{
+        backgroundImage: currentPage === "home"?(darkMode? "url('./landing-page-shapes-dark.svg')":"url('./landing-page-shapes-light.svg')"):"none",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: currentPage === "home"?"100%": "auto",
+        width: "100%",
+      }}
       className={cn(
-        "min-h-screen transition-colors duration-300",
-        darkMode ? "bg-[#2c2c2c] text-white" : "bg-[#fff8f8] text-[#333333]",
+        "min-h-screen flex flex-col transition-colors duration-300",
+        darkMode ? "bg-[#2c2c2c] text-white" : "bg-[#fff8f8] text-[#333333]"
       )}
     >
       {/* Header with mode toggle */}
@@ -193,18 +201,18 @@ export default function Home() {
             </button>
           )}
         </div>
-
-        {/* Main Content */}
-        {currentPage === "home" && (
-          <div className="mb-16">
-            <PortfolioPlayer darkMode={darkMode} onPlayPress={handlePlayPress} />
-          </div>
-        )}
       </div>
 
-      <div className="w-full max-w-6xl mx-auto px-4 md:px-8 pb-16">
-        {/* Navigation Header - Only shown on work and about pages */}
-        {currentPage !== "home" && (
+      {/* Main content wrapper - centers PortfolioPlayer */}
+      <div className="flex-1 flex justify-center items-center w-full h-full">
+        {currentPage === "home" && <PortfolioPlayer darkMode={darkMode} onPlayPress={handlePlayPress} />}
+      </div>
+
+
+      {currentPage !== "home" && (
+        <div className="w-full max-w-6xl mx-auto px-4 md:px-8 pb-16">
+          {/* Navigation Header - Only shown on work and about pages */}
+
           <div className="flex justify-between items-center mb-6">
             <div>
               <h2
@@ -230,20 +238,21 @@ export default function Home() {
               )}
             </div>
           </div>
-        )}
 
-        {/* Page Content */}
-        {currentPage === "work" && <WorkGrid darkMode={darkMode} />}
 
-        {currentPage === "about" && <About darkMode={darkMode} />}
+          {/* Page Content */}
+          {currentPage === "work" && <WorkGrid darkMode={darkMode} />}
 
-        {/* Social Media Icons - Only shown on work and about pages */}
-        {currentPage !== "home" && (
-          <div className="flex justify-center space-x-4 mt-16">
-            <SocialIcons />
-          </div>
-        )}
-      </div>
+          {currentPage === "about" && <About darkMode={darkMode} />}
+
+          {/* Social Media Icons - Only shown on work and about pages */}
+          {currentPage !== "home" && (
+            <div className="flex justify-center space-x-4 mt-16">
+              <SocialIcons />
+            </div>
+          )}
+        </div>
+      )}
     </div>
   )
 }
