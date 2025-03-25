@@ -28,7 +28,7 @@ export default function PortfolioPlayer({ darkMode, onPlayPress }: PortfolioPlay
           <div className="absolute top-1/3 right-1/5 w-40 h-20 bg-[#d11414]/40 rounded-b-full z-0"></div> {/* semi-circle */}
           <div className ="absolute top-1/3 left-1/4 w-40 h-40 z-0"> {/* green triangle */}
           <svg width="100" height="150" viewBox="0 0 250 343" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 343V0L250 343H0Z" fill="#0B3815" fill-opacity="0.84"/>
+            <path d="M0 343V0L250 343H0Z" fill="#0B3815" fillOpacity="0.84"/>
             </svg>
           </div>
           <div className="absolute -bottom-10 right-1/3 w-40 h-40 z-0" > {/*className="absolute" style={{ top: '400px', left: '600px' }} ///// rotated semi circle purple*/}
