@@ -21,7 +21,7 @@ export default function PortfolioPlayer({ darkMode, onPlayPress }: PortfolioPlay
   }
 
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full m-8">
       <div
         className={cn(
           "mb-16 relative align-center max-h-screen z-10 w-full max-w-md rounded-lg overflow-hidden shadow-lg backdrop-blur-lg",
@@ -68,12 +68,32 @@ export default function PortfolioPlayer({ darkMode, onPlayPress }: PortfolioPlay
           <button className="p-1">
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <button
-            className={cn("p-1 rounded-full text-white", darkMode ? "bg-[#333333]" : "bg-[#666666]")}
-            onClick={handlePlayClick}
-          >
-            {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
-          </button>
+          <span className="relative flex size-3">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75">
+              <button style={
+                {
+                  backgroundColor: darkMode?"#ffffff": "#666666",
+                  width: "28px",
+                  height: "28px",
+                }
+              }
+              className={cn("p-1 rounded-full", darkMode ? "bg-[#ffffff] text-gray-800" : "bg-[#666666] text-white")}
+              // onClick={handlePlayClick}
+            >
+              {/* {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />} */}
+            </button></span>
+            <span className="relative inline-flex size-3 rounded-full">
+              <button style={
+                {
+                  backgroundColor: "none",
+                }
+              }
+              className={cn("p-1 rounded-full")}
+              onClick={handlePlayClick}
+            >
+              {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+            </button></span>
+          </span>
           <button className="p-1">
             <ChevronRight className="w-5 h-5" />
           </button>

@@ -204,7 +204,7 @@ export default function Home() {
       </div>
 
       {/* Main content wrapper - centers PortfolioPlayer */}
-      <div className="flex-1 flex justify-center items-center w-full h-full">
+      <div className="flex-1 flex justify-center items-center w-full h-full p-4 md:p-6 lg:p-8">
         {currentPage === "home" && <PortfolioPlayer darkMode={darkMode} onPlayPress={handlePlayPress} />}
       </div>
 
