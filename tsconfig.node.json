@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    // "baseUrl": ".",  // Set base URL to the root of your project
+    // "paths": {
+    //   "@/*" : ["./*"]  // Alias @ to root directory
+    // }
+  },
+  "include" : ["vite.config.ts", "src/**/*"]         // Include all TypeScript files in the src folder
+}
+
