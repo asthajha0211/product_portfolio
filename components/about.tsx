@@ -10,23 +10,26 @@ export default function About({ darkMode }: AboutProps) {
     <div className="w-full max-w-3xl mx-auto overflow-auto">
       <div className="space-y-4 text-sm leading-relaxed">
         <p>
-          hi, i am astha jha! a 2024 engineering graduate with a major in information technology! I completed my undergrad from VIT, 
-          Vellore in India. i made my first website at the age of 10, a (rather lousy) duplicate of my school’s website and decided i was going to 
-          change people’s lives. when i entered university, i joined a technical chapter where i mainly handled marketing, content and communication 
-          between tech, design and management teams. i like to believe this is where my allegiance shifted from product development to product planning. 
+          hi, i'm astha jha! a 2024 engineering graduate with a major in information technology. i completed my undergrad from vit, vellore, india.
+          i made my first website at 10 — a (rather lousy) replica of my school’s website — and decided i was going to change the world.
+          when i entered university, i joined a tech chapter but somehow ended up handling marketing, content, and communication between tech, design, and management teams.
+          i like to believe that's where my allegiance shifted from product development to product planning.
         </p>
+
         <p>
-          i have interned at TVS Digital Singapore as a Data Analyst, Aditya Birla Group as a Associate Program Manager, and Futures First as a Quant Analyst 
-          and Application Developer. apart from this, i co-founded a startup called Dimensions Technology, with the aim to integrate XR into the education sector! 
+          i've interned at TVS Digital, Singapore, as a data analyst, Aditya Birla Group, Indonesia as an associate program manager, and Futures First, Bangalore as a quant analyst and application developer.
+          aside from this, i co-founded a startup called Dimensions Technology, aiming to integrate xr into education!
         </p>
+
         <p>
-          i have always wanted to make an impact in the lives of people around me. it started as taking part in debates and MUNs at school so that people would hear me 
-          out and eventually changed to helping build products that create a positive impact! 
+          making an impact has always been my thing. it started with debates and muns in school (because i wanted people to hear me out) and evolved into building products that actually make a difference.
         </p>
+
         <p>
-        i love to dance and read books! it is a life goal of mine to write and publish a book (hopefully fiction) someday! 
-        feel free to connect with me over X(formerly known as Twitter) or email!
+          i love dancing and reading books, and it's a goal of mine to write and publish a book someday (hopefully fiction).
+          feel free to connect with me over <a href="https://x.com/assthajha"><u>x (formerly known as twitter)</u></a> or <a href="mailto:asthajha05@gmail.com"><u>email</u></a>!
         </p>
+
       </div>
 
       {/* Social Media Icons */}

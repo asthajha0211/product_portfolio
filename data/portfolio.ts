@@ -18,7 +18,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "Glassmorphism",
     description: "First attempt at a glass like effect on elements.",
     image: "/glassmorphism-header.png?height=300&width=400",
-    link: "https://dribbble.com/shots/25640208-Glassmorphism",
+    link: "https://www.figma.com/design/tVEpfGBNq4GdV9hjKEPMvS/Product?node-id=158-3&t=hVDWKIeuycp7zeXb-1",
     type: "design",
   },
   {
