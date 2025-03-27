@@ -28,7 +28,7 @@ export default function PortfolioPlayer({ darkMode, onPlayPress }: PortfolioPlay
           darkMode ? "bg-[#333333]/70" : "bg-[#d9d9d9]/70"
         )}
       >
-        <div className="relative h-36 flex items-center px-4">
+        <div className="relative h-32 flex items-center px-4">
           <div className="w-30 h-30 rounded-lg overflow-hidden mr-4">
             {/* Add picture light mode here */}
             {!darkMode && (
@@ -54,50 +54,62 @@ export default function PortfolioPlayer({ darkMode, onPlayPress }: PortfolioPlay
           <div className="flex flex-col">
             <h1 className="text-xl font-medium">Portfolio</h1>
             <p className="text-sm opacity-70">Astha Jha</p>
-            <div className="mt-2 w-full h-1 bg-gray-400/30 rounded-full overflow-hidden">
+            <p className="text-xs opacity-70">Press play to see my work!</p>
+            <div className="w-full h-1 bg-gray-400/30 rounded-full overflow-hidden">
               <div className="h-full w-1/3 bg-gray-400"></div>
             </div>
           </div>
         </div>
-        <div
-          className={cn(
-            "flex justify-center items-center py-3 space-x-4 backdrop-blur-sm",
-            darkMode ? "bg-[#2c2c2c]/70" : "bg-[#dcdcdc]/70"
-          )}
-        >
-          <button className="p-1">
-            <ChevronLeft className="w-5 h-5" />
+        <div className="flex items-center justify-center space-x-4">
+          {/* Left Chevron Button */}
+          <button className="bg-gray-300 p-0">
+            <span className="material-symbols-outlined text-xl">
+              chevron_left
+            </span>
           </button>
-          <span className="relative flex size-3">
+
+          {/* Play/Pause Button */}
+          <span className="relative flex items-center">
+            {/* Ping Animation */}
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75">
-              <button style={
-                {
-                  backgroundColor: darkMode?"#ffffff": "#666666",
-                  width: "28px",
-                  height: "28px",
-                }
-              }
-              className={cn("p-1 rounded-full", darkMode ? "bg-[#ffffff] text-gray-800" : "bg-[#666666] text-white")}
-              // onClick={handlePlayClick}
-            >
-              {/* {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />} */}
-            </button></span>
-            <span className="relative inline-flex size-3 rounded-full">
-              <button style={
-                {
+              <button
+                style={{
+                  backgroundColor: darkMode ? "#ffffff" : "#666666",
+                  width: "27px",
+                  height: "27px",
+                  padding: "0",
+                }}
+                className={cn("p-0 rounded-full", darkMode ? "bg-[#ffffff] text-gray-800" : "bg-[#666666] text-white")}
+              >
+                {/* No content for ping animation */}
+              </button>
+            </span>
+            {/* Play/Pause Icon */}
+            <span className="relative inline-flex rounded-full">
+              <button
+                style={{
                   backgroundColor: "none",
-                }
-              }
-              className={cn("p-1 rounded-full")}
-              onClick={handlePlayClick}
-            >
-              {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
-            </button></span>
+                  padding: "0",
+                }}
+                className="p-0 rounded-full"
+                onClick={handlePlayClick}
+              >
+                <span className="material-symbols-outlined" style={{ fontSize: '2rem', padding: 0 }}>
+                  {isPlaying ? 'pause' : 'play_arrow'}
+                </span>
+              </button>
+            </span>
           </span>
-          <button className="p-1">
-            <ChevronRight className="w-5 h-5" />
+
+          {/* Right Chevron Button */}
+          <button className="bg-gray-300 p-0">
+            <span className="material-symbols-outlined text-xl">
+              chevron_right
+            </span>
           </button>
         </div>
+
+
       </div>
     </div>
 
