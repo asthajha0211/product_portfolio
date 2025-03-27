@@ -223,7 +223,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex space-x-4 text-sm">
-              <a href="https://drive.google.com/file/d/1aha9mMBXj328A6VP32zHO6rHWb2Kwm4V/view?usp=drive_link" target="_blank" className="hover:underline" rel="noreferrer">
+              <a href="https://drive.google.com/file/d/1y_D1lYQKlblb8ykRAIpQSbH6vnkWbH7Y/view?usp=sharing" target="_blank" className="hover:underline" rel="noreferrer">
                 resume
               </a>
               {currentPage === "work" && (
