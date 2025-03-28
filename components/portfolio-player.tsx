@@ -3,7 +3,6 @@
 import React from "react"
 import { useState } from 'react';
 import Image from "next/image"
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react"
 import { cn } from "../lib/utils"
 
 

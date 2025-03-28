@@ -11,7 +11,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "Fable Teardown",
     description: "A teardown of one of my favourite application, Fable!",
     image: "/fable-header.png?height=300&width=400",
-    link: "https://drive.google.com/file/d/1vIqfrgg729frHQHLj86q20Jm1V0n4fki/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1_ysaSPr0ZFC847ais8SHfeecu15IhDfW/view?usp=sharing",
     type: "business",
   },
   {

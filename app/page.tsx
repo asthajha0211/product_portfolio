@@ -6,8 +6,6 @@ import WorkGrid from "../components/work-grid"
 import About from "../components/about"
 import SocialIcons from "../components/social-icons"
 import { cn } from "../lib/utils"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Home() {
