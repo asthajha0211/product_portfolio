@@ -42,5 +42,12 @@ export const portfolioData: PortfolioItem[] = [
     link: "https://drive.google.com/file/d/16wLKbjddqxL3J7eUrWxN6nT4QVlNATb4/view?usp=sharing",
     type: "business",
   },
+  {
+    title: "The Struggles of Switching",
+    description: "Why changing apps feels more like moving homes!",
+    image: "/switching-apps-header.png?height=300&width=400",
+    link: "https://medium.com/@asthajha05/the-struggles-of-switching-9ab68ec3e83d",
+    type: "blog",
+  },
 ]
 
