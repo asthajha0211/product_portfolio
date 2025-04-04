@@ -15,6 +15,13 @@ export const portfolioData: PortfolioItem[] = [
     type: "business",
   },
   {
+    title: "Swiggy - Tribe",
+    description: "Build a community of foodies on Swiggy.",
+    image: "/tribe-swiggy-header.png?height=300&width=400",
+    link: "https://drive.google.com/file/d/1BFBtNe2wVRiCNiukdV5xJdi4JorJOcRr/view?usp=sharing",
+    type: "business",
+  },
+  {
     title: "Glassmorphism",
     description: "First attempt at a glass like effect on elements.",
     image: "/glassmorphism-header.png?height=300&width=400",
@@ -27,6 +34,13 @@ export const portfolioData: PortfolioItem[] = [
     image: "/beyond-four-k-header.png?height=300&width=400",
     link: "https://medium.com/@asthajha05/beyond-4k-ce319d753392",
     type: "blog",
+  },
+  {
+    title: "Zepto - Advertisements",
+    description: "Video advertisement ideas for Zepto",
+    image: "/advertisement-zepto-header.png?height=300&width=400",
+    link: "https://drive.google.com/file/d/1xcVbFirJMaL76yNYjjpp1oelK19Fes_6/view?usp=drive_link",
+    type: "marketing",
   },
   {
     title: "Portfolio - Design",
